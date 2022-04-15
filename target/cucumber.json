@@ -1,0 +1,407 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 4,
+        "name": "Open the application",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 5807928500,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I have opened the application in browser",
+            "match": {
+              "location": "productPriceSteps.i_have_opened_the_application_in_browser_and_logged_in()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-04-15T17:22:57.410Z",
+        "before": [
+          {
+            "result": {
+              "duration": 2141486900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "loginBaseClass1.SetUp()"
+            }
+          }
+        ],
+        "line": 15,
+        "name": "Validate the successful login using multiple test data",
+        "description": "",
+        "id": "this-feature-is-demonstrating-a-successful-and-failing-login-scenario;validate-the-successful-login-using-multiple-test-data;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 350037800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "loginBaseClass1.TearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 135597500,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I enter a username \"standard_user\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"standard_user\"",
+                  "offset": 19
+                }
+              ],
+              "location": "loginSteps1.i_enter_a_username(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 111932700,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I enter a password \"secret_sauce\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"secret_sauce\"",
+                  "offset": 19
+                }
+              ],
+              "location": "loginSteps1.i_enter_a_password(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 168611100,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I click on the login button",
+            "match": {
+              "location": "loginSteps1.i_click_on_the_login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 34191600,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I should have landed on the home page",
+            "match": {
+              "location": "loginSteps1.i_should_have_landed_on_the_home_page()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Regression"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "Open the application",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 5933732900,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I have opened the application in browser",
+            "match": {
+              "location": "productPriceSteps.i_have_opened_the_application_in_browser_and_logged_in()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-04-15T17:23:06.220Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1390934900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "loginBaseClass1.SetUp()"
+            }
+          }
+        ],
+        "line": 25,
+        "name": "Validate the negative login using multiple test data",
+        "description": "",
+        "id": "this-feature-is-demonstrating-a-successful-and-failing-login-scenario;validate-the-negative-login-using-multiple-test-data;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 228982300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "loginBaseClass1.TearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 117224800,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "I enter a username \"standard_user2\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"standard_user2\"",
+                  "offset": 19
+                }
+              ],
+              "location": "loginSteps1.i_enter_a_username(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 82247100,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "I enter a password \"xyz123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"xyz123\"",
+                  "offset": 19
+                }
+              ],
+              "location": "loginSteps1.i_enter_a_password(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 76676200,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "I click on the login button",
+            "match": {
+              "location": "loginSteps1.i_click_on_the_login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 39699000,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "I should have received the error \"Epic sadface: Username and password do not match any user in this service\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Epic sadface: Username and password do not match any user in this service\"",
+                  "offset": 33
+                }
+              ],
+              "location": "loginSteps1.i_should_have_received_the_error(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Regression"
+          }
+        ]
+      }
+    ],
+    "name": "This feature is demonstrating a successful and failing login scenario",
+    "description": "",
+    "id": "this-feature-is-demonstrating-a-successful-and-failing-login-scenario",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/features/login1.feature",
+    "tags": [
+      {
+        "name": "@Regression",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 4,
+        "name": "Open the application and login successfully",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 5867076500,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I have opened the application in browser",
+            "match": {
+              "location": "productPriceSteps.i_have_opened_the_application_in_browser_and_logged_in()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-04-15T17:23:14.101Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1363331500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "loginBaseClass1.SetUp()"
+            }
+          }
+        ],
+        "line": 7,
+        "name": "Validate the prices of the products",
+        "description": "",
+        "id": "this-feature-would-be-used-to-validate-the-prices-of-each-product;validate-the-prices-of-the-products",
+        "after": [
+          {
+            "result": {
+              "duration": 429284600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "loginBaseClass1.TearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 354757500,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I have logged in successfully",
+            "match": {
+              "location": "productPriceSteps.i_have_logged_in_successfully()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 279045800,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I will validate the Product and Price",
+            "match": {
+              "location": "productPriceSteps.i_will_validate_the_Product_and_Price(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Sauce Labs Backpack",
+                  "$29.99"
+                ]
+              },
+              {
+                "cells": [
+                  "Sauce Labs Bike Light",
+                  "$9.99"
+                ]
+              },
+              {
+                "cells": [
+                  "Sauce Labs Bolt T-Shirt",
+                  "$15.99"
+                ]
+              },
+              {
+                "cells": [
+                  "Sauce Labs Fleece Jacket",
+                  "$49.99"
+                ]
+              },
+              {
+                "cells": [
+                  "Sauce Labs Onesie",
+                  "$7.99"
+                ]
+              },
+              {
+                "cells": [
+                  "Test.allTheThings() T-Shirt (Red)",
+                  "$15.99"
+                ]
+              }
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Sanity"
+          }
+        ]
+      }
+    ],
+    "name": "This feature would be used to validate the prices of each product",
+    "description": "",
+    "id": "this-feature-would-be-used-to-validate-the-prices-of-each-product",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/features/product.feature",
+    "tags": [
+      {
+        "name": "@Sanity",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
